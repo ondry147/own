@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>{% block title %}{% endblock %} | WoDMT2.cz</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <link rel="stylesheet" type="text/css" href="/styles.css"/>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+    <script src="js/IE8.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/>
+    <![endif]-->
+
+</head>
+
+<body>
+<div id="header">
+    <div id="header" class="view">
+        <div id="srvstatusbar">
+            <div id="srvstatusbar_left">
+                <div id="srvstatusbar_item">
+                    <div id="srvstatusbar_item_seperator" class="right"></div>
+                    <div id="srvstatusbar_item_content">
+                        <div id="srvstatusbar_item_content_icon_online"></div>
+                        <p class="textstyle_srvstatusbar left">Kanál 1</p>
+                    </div>
+                </div>
+                <div id="srvstatusbar_item">
+                    <div id="srvstatusbar_item_seperator" class="right"></div>
+                    <div id="srvstatusbar_item_content">
+                        <div id="srvstatusbar_item_content_icon_offline"></div>
+                        <p class="textstyle_srvstatusbar left">Kanál 2</p>
+                    </div>
+                </div>
+                <div id="srvstatusbar_item">
+                    <div id="srvstatusbar_item_seperator" class="right"></div>
+                    <div id="srvstatusbar_item_content">
+                        <div id="srvstatusbar_item_content_icon_offline" ></div>
+                        <p class="textstyle_srvstatusbar left">Kanál 3</p>
+                    </div>
+                </div>
+                <div id="srvstatusbar_item">
+                    <div id="srvstatusbar_item_seperator" class="right"></div>
+                    <div id="srvstatusbar_item_content">
+                        <div id="srvstatusbar_item_content_icon_offline" ></div>
+                        <p class="textstyle_srvstatusbar left">Kanál 4</p>
+                    </div>
+                </div>
+            </div>
+            <div id="srvstatusbar_item">
+                <div id="srvstatusbar_item_seperator" class="left"></div>
+                <div id="srvstatusbar_item_content">
+                    <p class="textstyle_srvstatusbar left">Online hráčů: <span style="color: #fc9c85;">458</span></p>
+                </div>
+            </div>
+        </div>
+        <a id="header_logo"></a>
+        <div id="navigation">
+            <a href="/" id="navigation_item_1" class="navigation_item"></a>
+            <a href="/home/index" id="navigation_item_2" class="navigation_item"></a>
+            <a href="/team/index" id="navigation_item_3" class="navigation_item"></a>
+            <a href="index.php?s=download" id="navigation_item_center" class="navigation_item"></a>
+            <a href="market/" id="navigation_item_4" class="navigation_item"></a>
+            <a href="destek/" id="navigation_item_5" class="navigation_item"></a>
+            <a href="http://www.fullmmo.net" id="navigation_item_6" class="navigation_item"></a>
+        </div>
+    </div>
+</div>
+
+{% block body %}
+{% endblock %}
+
+<!-- BOCNI PANEL START -->
+<div id="userpanel">
+    <div id="userpanel_social">
+        <a href="http://www.epvp.com" id="userpanel_social_epvp" class="socialicon"></a>
+        <a href="http://www.youtube.com" id="userpanel_social_youtube" class="socialicon"></a>
+        <a href="http://www.facebook.com/tasgarahmetzeki" id="userpanel_social_facebook" class="socialicon"></a>
+        <a href="http://www.twitter.com/tasgarzekiahmet" id="userpanel_social_twitter" class="socialicon"></a>
+    </div>
+
+    <div id="userpanel_login">
+        <div id="userpanel_login_inputs">
+            <div align="center">
+                <form id="userInfo" style="margin:0;padding:0; float:right;" action="/login" method="POST">
+                    <div class="form_input_bg"><input type="text" maxlength="16" size="10" name="username">&nbsp;</div>
+                    <div class="form_input_bg"><input type="password" maxlength="16" size="10" name="password">&nbsp;</div>
+                    <div align="left"><input type="submit" value="Přihlásit se" name="submit"></div>
+                </form>
+            </div>
+            <a href="index.php?s=register" class="textstyle_sidebarlink" style="margin-left: 2px;">Registrace</a><br>
+            <a href="index.php?s=lostpw" class="textstyle_sidebarlink" style="margin-left: 2px;">Obnovení hesla</a>
+        </div>
+    </div>
+</div>
+
+
+<div id="sidebar">
+    <div id="sidebar_begin"></div>
+    <div id="sidebar_rep_bg">
+        <div id="sidebar_top_bg">
+            <div id="sidebar_bottom_bg">
+                <div id="sidebar_content">
+                    <div id="sidebar_content_item">
+                        <div id="sidebar_content_item_title">
+                            <p class="textstyle_sidebar_content_item_title">Karakter Siralamasi</p>
+                        </div>
+                        <div id="sidebar_content_item_content" class="textstyle_sidebar_content_item_content">
+                            <div id="sidebar_content_item_content_ranking_player">
+                                <div id="sidebar_content_item_content_ranking_header" class="textstyle_ranking_header">
+                                </div>
+                                <br>
+                                <table>
+                                    <tbody>
+                                    <div class="ranking_player_place">#</div>
+                                    <div class="ranking_player_username">Karakter Adi</div>
+                                    <div class="ranking_player_empire">Bayrak</div>
+                                    <div class="ranking_player_rating">Level</div>
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="textstyle_ranking_place1">
+                                                <div class="ranking_player_place1">1.</div>
+                                            </td>
+                                            <td class="textstyle_ranking_place1">
+                                                <div class="ranking_player_username1">Savaro</div>
+                                            </td>
+                                            <td class=\"textstyle_ranking_place1\" width="110px">
+                                                <div class=\"ranking_player_empire1\">
+                                                    <img src="images/reiche/1_kl.jpg"/>
+                                                </div>
+                                            </td>
+                                            <td class="\"textstyle_ranking_place1\" width="110px">300</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table>
+                                        <tbody>
+                                        <tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">2.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">uZu</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/1_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">3.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">elpito</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/1_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">4.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">Droperka</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/1_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">5.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">IronHeid</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/1_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">6.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">MaReN</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/3_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">7.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">Moris</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/3_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">8.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">Iluminiant</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/3_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">9.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">PilC</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/3_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr></tbody></table><table><tbody><tr><td class="textstyle_ranking_place1"><div class="ranking_player_place1">10.</div></td><td class="textstyle_ranking_place1"><div class="ranking_player_username1">Qentinek</div></td><td class=\"textstyle_ranking_place1\" width="110px"><div class=\"ranking_player_empire1\"><img src="images/reiche/3_kl.jpg"/></div></td><td class="\"textstyle_ranking_place1\" width="110px">300</td></tr>
+                                        </tbody>
+                                    </table>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="index.php?s=rankings" style="clear:both; margin: 7px auto;" class="button_medium">T?m Liste</a>
+                        </div>
+                    </div>
+                    <div id="sidebar_content_item">
+                        <div id="sidebar_content_item_title">
+                            <p class="textstyle_sidebar_content_item_title">Lonca Siralamasi</p>
+                        </div>
+                        <div id="sidebar_content_item_content" class="textstyle_sidebar_content_item_content">
+                            <div id="sidebar_content_item_content_ranking_guilds">
+                                <div id="sidebar_content_item_content_ranking_header" class="textstyle_ranking_header">
+                                </div>
+                                <br>
+                                <table>
+                                    <tbody>
+                                    <div class="ranking_guilds_place">#</div>
+                                    <div class="ranking_guilds_guildname">Lonca Adi</div>
+                                    <div class="ranking_guilds_rating">Seviye</div>
+                                    <table>
+                                        <tbody>
+                                        <tr>
+                                            <td class="textstyle_ranking_place1">
+                                                <div class="ranking_player_place1">1.</div>
+                                            </td>
+                                            <td class="textstyle_ranking_place1">
+                                                <div class="ranking_player_username1">ahoj</div>
+                                            </td>
+                                            <td class="\"textstyle_ranking_place1\" width="110px">
+                                            0
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="?s=rankings" style="clear:both; margin: 7px auto;" class="button_medium">T?m Liste</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<!-- BOCNI PANEL KONEC -->
+
+
+<!-- FOOTER START -->
+<div id="footer">
+    <div id="footer" class="view">
+        <div id="footer_main_content_pages">
+            <div id="footer_main_content_pages_content"></div>
+        </div>
+        <div id="footer_main_content_button_top">
+            <a href="#" id="footer_button_backtoptop"></a>
+        </div>
+        <div id="footer_copyright">
+            <p class="textstyle_footer_copyright">
+                Copyright &copy; FULLMMO - 2014 | Tema King--Sora Yapimidir <br> T?rk?elestirme <a href='http://www.facebook.com/tasgarahmetzeki'>AhmetZekiTasgar</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- FOOTER KONEC -->
+
+</body>
+</html>
